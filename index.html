@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102541">
+<title>Brian Flatley | Arizona Real Estate</title>
+<meta name="description" content="Explore your home's value and estimate your monthly mortgage payment with Brian Flatley, Arizona real estate professional.">
+<style>
+:root{--navy:#102541;--navy2:#18395e;--gold:#c9a45c;--gold2:#e4c985;--ink:#172536;--muted:#667487;--paper:#f6f7f9;--white:#fff;--line:#e4e8ee;--shadow:0 18px 55px rgba(16,37,65,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}.topbar{background:var(--navy);color:#dbe4ef;font-size:12px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px}.navbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navinner{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brandmark{width:42px;height:42px;border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-weight:800;font-family:Georgia,serif;font-size:21px}.brandname{font-family:Georgia,serif;font-size:19px;font-weight:700;color:var(--navy);letter-spacing:.06em;line-height:1.15}.brandname small{display:block;font:600 9px/1.8 system-ui;letter-spacing:.19em;color:var(--muted)}.navlinks{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:650;color:#35465b}.navlinks a:hover{color:#a47b35}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:4px;padding:13px 20px;font-weight:750;font-size:13px;transition:.2s}.btn-gold{background:var(--gold);color:#14263d}.btn-gold:hover{background:var(--gold2);transform:translateY(-1px)}.btn-outline{border:1px solid rgba(255,255,255,.55);color:#fff;background:transparent}.btn-navy{background:var(--navy);color:white}.btn-navy:hover{background:var(--navy2)}.menu{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
+.hero{background:linear-gradient(112deg,rgba(8,25,46,.94),rgba(16,37,65,.76)),url('assets/hero-image.jpg');background-size:cover;background-position:center;min-height:590px;color:white;display:flex;align-items:center;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-90px;bottom:-170px;width:520px;height:520px;border:1px solid rgba(201,164,92,.35);border-radius:50%;box-shadow:0 0 0 45px rgba(201,164,92,.05),0 0 0 90px rgba(201,164,92,.04)}.hero-content{position:relative;z-index:1;max-width:690px;padding:88px 0}.eyebrow{color:var(--gold2);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:800}.hero h1{font:500 clamp(42px,6vw,68px)/1.08 Georgia,serif;margin:17px 0}.hero p{color:#d8e0e9;max-width:560px;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.trustline{display:flex;gap:24px;flex-wrap:wrap;margin-top:38px;color:#dce5ef;font-size:12px}.trustline span:before{content:"✦";color:var(--gold);margin-right:8px}
+.quickbar{background:white;box-shadow:var(--shadow);border-radius:8px;padding:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:-44px;position:relative;z-index:2}.quickitem{display:flex;gap:14px;align-items:center;padding:8px 14px;border-right:1px solid var(--line)}.quickitem:last-child{border:0}.quickicon{width:42px;height:42px;border-radius:50%;background:#f7f1e6;color:#9b7435;display:grid;place-items:center;font-size:20px}.quickitem strong{display:block;color:var(--navy);font-size:14px}.quickitem small{color:var(--muted);font-size:12px}
+section{padding:86px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.section-head .eyebrow{color:#a47b35}.section-head h2{font:500 clamp(30px,4vw,43px)/1.15 Georgia,serif;color:var(--navy);margin:10px 0}.section-head p{color:var(--muted);margin:0}.tools{background:var(--paper)}.toolgrid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}.panel{background:white;border:1px solid var(--line);border-radius:9px;padding:30px;box-shadow:0 8px 30px rgba(16,37,65,.045)}.panelhead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:23px}.panel h3{font:500 25px Georgia,serif;color:var(--navy);margin:0 0 5px}.panelhead p{font-size:13px;color:var(--muted);margin:0}.pill{font-size:10px;text-transform:uppercase;letter-spacing:.1em;background:#f7f1e6;color:#8c672d;padding:7px 9px;border-radius:20px;white-space:nowrap}.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:750;color:#415168;letter-spacing:.035em}.field input,.field select,.field textarea{width:100%;border:1px solid #dce2e9;border-radius:4px;padding:12px 12px;color:var(--ink);background:white;outline:none;min-width:0}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,164,92,.13)}.field textarea{min-height:75px;resize:vertical}.hint{font-size:10px;color:#8792a0;margin-top:-3px}.rangehead{display:flex;justify-content:space-between;gap:10px;font-size:12px;font-weight:700;color:#46566a}.rangehead output{color:#9b7435;font-weight:800}.range{width:100%;accent-color:var(--gold);margin:12px 0 20px}.resultbox{background:var(--navy);color:white;border-radius:7px;padding:22px;margin-top:16px}.resultlabel{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#cbd5e1}.bigresult{font:500 36px Georgia,serif;color:var(--gold2);margin:3px 0 12px}.resultrows{display:grid;grid-template-columns:1fr 1fr;gap:10px;border-top:1px solid rgba(255,255,255,.16);padding-top:13px}.resultrows div{font-size:11px;color:#cbd5e1}.resultrows strong{display:block;color:white;font-size:14px;margin-top:2px}.disclaimer{font-size:10px;color:#8b96a4;margin-top:13px;line-height:1.5}.bar{height:8px;border-radius:8px;overflow:hidden;background:#e8edf2;display:flex;margin:15px 0 5px}.bar span:nth-child(1){background:var(--gold)}.bar span:nth-child(2){background:#6685a7}.bar span:nth-child(3){background:#b9c4d0}.bar span:nth-child(4){background:#dfe4ea}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:10px;color:var(--muted)}.legend i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px}
+.valuation{background:white}.valuationgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.photo-card{min-height:460px;background:linear-gradient(180deg,rgba(16,37,65,.05),rgba(16,37,65,.75)),url('assets/brian-flatley.jpg') center 25%/cover,#dce3eb;border-radius:8px;position:relative;overflow:hidden}.photo-card .photo-caption{position:absolute;bottom:28px;left:28px;color:white}.photo-caption strong{display:block;font:500 27px Georgia,serif}.photo-caption small{color:#e6d4ad;letter-spacing:.13em;text-transform:uppercase;font-size:10px}.valuation-copy h2{font:500 clamp(32px,4vw,45px)/1.15 Georgia,serif;color:var(--navy);margin:10px 0 15px}.valuation-copy p{color:var(--muted)}.steps{display:grid;gap:15px;margin:25px 0}.step{display:flex;gap:13px;align-items:flex-start}.stepnum{width:28px;height:28px;border-radius:50%;background:#f7f1e6;color:#946e31;display:grid;place-items:center;font-size:12px;font-weight:800;flex:none}.step strong{display:block;color:var(--navy);font-size:13px}.step small{color:var(--muted);font-size:12px}
+.about{background:var(--navy);color:white}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about h2{font:500 clamp(32px,4vw,45px)/1.15 Georgia,serif;margin:10px 0 18px}.about p{color:#d2dce7}.about .eyebrow{color:var(--gold2)}.aboutcard{border:1px solid rgba(201,164,92,.4);padding:30px;border-radius:8px}.aboutcard blockquote{font:italic 21px/1.5 Georgia,serif;color:#f1e4c9;margin:0 0 15px}.aboutcard small{color:#bdc9d7}
+.faq{background:var(--paper)}.faqwrap{max-width:800px;margin:auto}.faqitem{background:white;border:1px solid var(--line);border-radius:6px;margin-bottom:10px}.faqq{width:100%;text-align:left;background:none;border:0;padding:18px 20px;display:flex;justify-content:space-between;gap:15px;font-weight:750;color:var(--navy)}.faqa{display:none;padding:0 20px 18px;color:var(--muted);font-size:13px}.faqitem.open .faqa{display:block}.faqitem.open .plus{transform:rotate(45deg)}.plus{color:#a47b35;font-size:21px;transition:.2s}
+.cta{background:linear-gradient(110deg,var(--navy),#1b3d63);color:white;text-align:center;padding:65px 0}.cta h2{font:500 37px Georgia,serif;margin:0 0 10px}.cta p{color:#d2dce7;margin:0 0 22px}
+footer{background:#0a192b;color:#d2dce7;padding:34px 0;font-size:12px}.footerinner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footerbrand{font:600 17px Georgia,serif;color:white}.footnote{color:#91a0b2;margin-top:8px}
+.modal{position:fixed;inset:0;background:rgba(5,15,28,.72);display:none;align-items:center;justify-content:center;padding:18px;z-index:100}.modal.show{display:flex}.modalbox{background:white;border-radius:9px;width:min(650px,100%);max-height:92vh;overflow:auto;padding:28px;position:relative}.modalclose{position:absolute;right:17px;top:12px;border:0;background:none;font-size:25px;color:#657386}.modalbox h3{font:500 27px Georgia,serif;color:var(--navy);margin:0 35px 5px 0}.modalbox>p{font-size:13px;color:var(--muted);margin:0 0 20px}.formstatus{font-size:12px;color:#52734d;margin-top:10px;min-height:18px}.mobile-cta{display:none}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:20px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.show{display:flex}.menu{display:block}.navcta{display:none}.hero{min-height:540px}.quickbar{grid-template-columns:1fr;margin-top:-25px;gap:8px}.quickitem{border-right:0;border-bottom:1px solid var(--line);padding:10px}.quickitem:last-child{border:0}.toolgrid,.valuationgrid,.aboutgrid{grid-template-columns:1fr}.photo-card{min-height:390px;order:2}.valuation-copy{order:1}section{padding:65px 0}.panel{padding:22px}.mobile-cta{display:block;position:fixed;bottom:0;left:0;right:0;background:white;padding:10px 4%;box-shadow:0 -5px 22px rgba(0,0,0,.1);z-index:40}.mobile-cta .btn{width:100%}footer{padding-bottom:85px}}
+@media(max-width:480px){.topbar .container{justify-content:center}.topbar .container span:last-child{display:none}.fieldgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero h1{font-size:43px}.resultrows{grid-template-columns:1fr 1fr}.panelhead{display:block}.pill{display:inline-block;margin-top:10px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>ARIZONA REAL ESTATE · LOCAL GUIDANCE, PERSONAL SERVICE</span><span>Helping Families Move. Helping Agents Grow.</span></div></div>
+<header class="navbar"><div class="container navinner">
+<a class="brand" href="#home"><span class="brandmark">BF</span><span class="brandname">BRIAN FLATLEY<small>REAL ESTATE PROFESSIONAL</small></span></a>
+<nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#tools">Mortgage Calculator</a><a href="#valuation">Home Valuation</a><a href="#about">About Brian</a><a href="#faq">FAQs</a></nav>
+<a class="btn btn-gold navcta" href="#valuation">Get Your Home Value</a><button class="menu" id="menuBtn" aria-label="Open navigation">☰</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+<div class="eyebrow">YOUR ARIZONA REAL ESTATE RESOURCE</div>
+<h1>Make Your Next Move<br><span style="color:var(--gold2)">With Confidence.</span></h1>
+<p>Whether you're thinking about selling, buying, or simply exploring your options, get the clarity you need to take your next step.</p>
+<div class="hero-actions"><a class="btn btn-gold" href="#valuation">Discover Your Home's Value&nbsp; →</a><a class="btn btn-outline" href="#tools">Calculate Your Mortgage</a></div>
+<div class="trustline"><span>Personalized guidance</span><span>Local market perspective</span><span>Clear next steps</span></div>
+</div></div></section>
+<div class="container"><div class="quickbar">
+<div class="quickitem"><div class="quickicon">⌂</div><div><strong>Know Your Home's Value</strong><small>Request a personalized valuation</small></div></div>
+<div class="quickitem"><div class="quickicon">$</div><div><strong>Plan Your Monthly Payment</strong><small>Explore an estimated mortgage</small></div></div>
+<div class="quickitem"><div class="quickicon">✧</div><div><strong>Make Informed Decisions</strong><small>Connect with Brian for guidance</small></div></div>
+</div></div>
+<section class="tools" id="tools"><div class="container">
+<div class="section-head"><div class="eyebrow">TOOLS FOR YOUR NEXT MOVE</div><h2>Plan Before You Make a Move</h2><p>Explore estimated costs and send your questions directly to Brian. Adjust the numbers to see how different scenarios affect your budget.</p></div>
+<div class="toolgrid">
+<div class="panel">
+<div class="panelhead"><div><h3>Mortgage Calculator</h3><p>Estimate your monthly homeownership costs.</p></div><span class="pill">Interactive tool</span></div>
+<div class="fieldgrid">
+<div class="field"><label for="homePrice">HOME PRICE ($)</label><input id="homePrice" type="number" min="0" step="1000" value="450000"></div>
+<div class="field"><label for="downPct">DOWN PAYMENT (%)</label><input id="downPct" type="number" min="0" max="100" step=".5" value="20"></div>
+<div class="field"><label for="rate">INTEREST RATE (%)</label><input id="rate" type="number" min="0" max="30" step=".01" value="6.5"></div>
+<div class="field"><label for="term">LOAN TERM</label><select id="term"><option value="30">30 years</option><option value="20">20 years</option><option value="15">15 years</option><option value="10">10 years</option></select></div>
+</div>
+<div class="field"><div class="rangehead"><label for="tax">ANNUAL PROPERTY TAX</label><output id="taxOut">$4,500</output></div><input class="range" id="tax" type="range" min="0" max="20000" step="100" value="4500"></div>
+<div class="field"><div class="rangehead"><label for="insurance">ANNUAL HOME INSURANCE</label><output id="insuranceOut">$1,800</output></div><input class="range" id="insurance" type="range" min="0" max="10000" step="50" value="1800"></div>
+<div class="field"><div class="rangehead"><label for="hoa">MONTHLY HOA</label><output id="hoaOut">$100</output></div><input class="range" id="hoa" type="range" min="0" max="1000" step="10" value="100"></div>
+<div class="field"><div class="rangehead"><label for="pmi">MONTHLY PMI (IF APPLICABLE)</label><output id="pmiOut">$0</output></div><input class="range" id="pmi" type="range" min="0" max="500" step="5" value="0"></div>
+<div class="resultbox" aria-live="polite"><div class="resultlabel">Estimated monthly payment</div><div class="bigresult" id="monthlyTotal">$2,826</div>
+<div class="resultrows"><div>Principal & interest<strong id="pi">$2,275</strong></div><div>Property tax<strong id="taxMonthly">$375</strong></div><div>Home insurance<strong id="insMonthly">$150</strong></div><div>HOA + PMI<strong id="otherMonthly">$100</strong></div><div>Down payment<strong id="downAmount">$90,000</strong></div><div>Estimated loan<strong id="loanAmount">$360,000</strong></div></div>
+<div class="bar"><span id="barPI" style="width:80%"></span><span id="barTax" style="width:13%"></span><span id="barIns" style="width:5%"></span><span id="barOther" style="width:2%"></span></div>
+<div class="legend"><span><i style="background:#c9a45c"></i>Principal & interest</span><span><i style="background:#6685a7"></i>Tax</span><span><i style="background:#b9c4d0"></i>Insurance</span><span><i style="background:#dfe4ea"></i>Other</span></div>
+</div><p class="disclaimer">This calculator provides an estimate for educational purposes only. Actual payments may vary. It does not include all possible costs, and is not a loan offer or commitment to lend.</p>
+<button class="btn btn-navy" style="width:100%;margin-top:10px" id="askMortgage">Ask Brian About These Numbers →</button>
+</div>
+<div class="panel">
+<div class="panelhead"><div><h3>Request a Home Valuation</h3><p>Tell Brian a little about your property.</p></div><span class="pill">No obligation</span></div>
+<p style="font-size:13px;color:var(--muted);margin-top:-8px">Get a personalized review based on your property details and local market context. This is a request for a valuation—not an instant automated appraisal.</p>
+<form id="valuationForm">
+<div class="fieldgrid">
+<div class="field full"><label for="vAddress">PROPERTY ADDRESS *</label><input id="vAddress" name="propertyAddress" required placeholder="Street address, city, ZIP"></div>
+<div class="field"><label for="vType">PROPERTY TYPE</label><select id="vType" name="propertyType"><option>Single-family home</option><option>Condo</option><option>Townhome</option><option>Multi-family</option><option>Other</option></select></div>
+<div class="field"><label for="vBeds">BEDROOMS</label><select id="vBeds" name="bedrooms"><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+<div class="field"><label for="vBaths">BATHROOMS</label><select id="vBaths" name="bathrooms"><option value="">Select</option><option>1</option><option>1.5</option><option>2</option><option>2.5</option><option>3</option><option>4+</option></select></div>
+<div class="field"><label for="vSqft">APPROX. SQUARE FEET</label><input id="vSqft" name="squareFeet" type="number" min="0" placeholder="e.g. 1,850"></div>
+<div class="field full"><label for="vCondition">PROPERTY CONDITION</label><select id="vCondition" name="condition"><option>Excellent / recently updated</option><option>Good / well maintained</option><option>Average / some updates needed</option><option>Needs significant repairs</option><option>Not sure</option></select></div>
+<div class="field"><label for="vName">YOUR NAME *</label><input id="vName" name="name" required autocomplete="name" placeholder="Full name"></div>
+<div class="field"><label for="vEmail">EMAIL *</label><input id="vEmail" name="email" required type="email" autocomplete="email" placeholder="you@example.com"></div>
+<div class="field full"><label for="vPhone">PHONE</label><input id="vPhone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555"></div>
+<div class="field full"><label for="vNotes">ANYTHING ELSE BRIAN SHOULD KNOW?</label><textarea id="vNotes" name="notes" placeholder="Updates, features, your timeline, or questions..."></textarea></div>
+</div>
+<input type="hidden" name="leadType" value="Home Valuation">
+<button class="btn btn-gold" type="submit" style="width:100%">Request My Home Valuation →</button>
+<div class="formstatus" id="valuationStatus" role="status"></div>
+<p class="disclaimer">By submitting, you agree that Brian may contact you about your request. Your information will be used to respond to your inquiry.</p>
+</form>
+</div>
+</div></div></section>
+<section class="valuation" id="valuation"><div class="container valuationgrid">
+<div class="photo-card"><div class="photo-caption"><strong>Find Your Place in Arizona.</strong><small>Local Homes · New Possibilities</small></div></div>
+<div class="valuation-copy"><div class="eyebrow">A MORE PERSONAL APPROACH</div><h2>Your Home Is More Than a Number.</h2><p>A meaningful home valuation considers more than square footage. Location, condition, upgrades, recent comparable sales, and current market activity all matter.</p><div class="steps">
+<div class="step"><span class="stepnum">1</span><div><strong>Share your property details</strong><small>Tell Brian about your home and your goals.</small></div></div>
+<div class="step"><span class="stepnum">2</span><div><strong>Get a personalized review</strong><small>Brian can review relevant local market information and comparable properties.</small></div></div>
+<div class="step"><span class="stepnum">3</span><div><strong>Discuss your next step</strong><small>Use the information to plan a sale, purchase, or future move.</small></div></div>
+</div><a class="btn btn-navy" href="#tools">Start With Your Home Details →</a></div>
+</div></section>
+<section class="about" id="about"><div class="container aboutgrid"><div><div class="eyebrow">MEET YOUR REAL ESTATE RESOURCE</div><h2>Guidance That Moves With You.</h2><p>Buying or selling a home is a major decision. Brian Flatley is here to help you understand your options, ask the right questions, and move forward with a plan that fits your goals.</p><p>Use the tools on this page to get started, then reach out for a conversation about your next move.</p><a class="btn btn-gold" href="#valuation">Connect With Brian</a></div><div class="aboutcard"><blockquote>“Helping families move with clarity, confidence, and a plan for what comes next.”</blockquote><small>— Brian Flatley · Arizona Real Estate</small></div></div></section>
+<section class="faq" id="faq"><div class="container"><div class="section-head"><div class="eyebrow">GOOD QUESTIONS TO ASK</div><h2>Frequently Asked Questions</h2><p>A few helpful notes before you get started.</p></div><div class="faqwrap">
+<div class="faqitem"><button class="faqq">Is the home valuation an instant appraisal? <span class="plus">+</span></button><div class="faqa">No. The form sends your property details to Brian for a personalized review. It is not an automated valuation model, formal appraisal, or guarantee of a sale price.</div></div>
+<div class="faqitem"><button class="faqq">How accurate is the mortgage calculator? <span class="plus">+</span></button><div class="faqa">It estimates principal, interest, property tax, homeowners insurance, HOA, and any PMI amount you enter. Your lender's quote may differ and may include additional fees or costs.</div></div>
+<div class="faqitem"><button class="faqq">Does the monthly estimate include closing costs? <span class="plus">+</span></button><div class="faqa">No. Closing costs, utilities, maintenance, and other ownership expenses are not included. Ask your lender for a full loan estimate.</div></div>
+<div class="faqitem"><button class="faqq">What happens after I submit a request? <span class="plus">+</span></button><div class="faqa">Your inquiry is sent to the connected Google Sheet. Brian or his team can then follow up using the contact details you provide.</div></div>
+</div></div></section>
+<section class="cta"><div class="container"><div class="eyebrow">LET'S TALK ABOUT YOUR NEXT MOVE</div><h2>Clarity Starts With a Conversation.</h2><p>Explore your numbers, request a valuation, and take the next step when you're ready.</p><a class="btn btn-gold" href="#tools">Get Started Today →</a></div></section>
+</main>
+<footer><div class="container footerinner"><div><div class="footerbrand">BRIAN FLATLEY</div><div class="footnote">Arizona Real Estate · Helping Families Move. Helping Agents Grow.</div></div><div>© <span id="year"></span> Brian Flatley. All rights reserved.<div class="footnote">Mortgage estimates are informational only and not a lending offer.</div></div></div></footer>
+<div class="mobile-cta"><a class="btn btn-gold" href="#valuation">Request a Home Valuation</a></div>
+<div class="modal" id="mortgageModal"><div class="modalbox"><button class="modalclose" id="closeModal" aria-label="Close">×</button><h3>Ask Brian About Your Mortgage Estimate</h3><p>Your current calculator results will be included with your inquiry.</p>
+<form id="mortgageForm"><div class="fieldgrid">
+<div class="field"><label for="mName">YOUR NAME *</label><input id="mName" name="name" required></div><div class="field"><label for="mEmail">EMAIL *</label><input id="mEmail" name="email" type="email" required></div>
+<div class="field"><label for="mPhone">PHONE</label><input id="mPhone" name="phone" type="tel"></div><div class="field"><label for="mTimeline">BUYING TIMELINE</label><select id="mTimeline" name="timeline"><option>Just exploring</option><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>More than a year</option></select></div>
+<div class="field full"><label for="mQuestions">QUESTIONS OR NOTES</label><textarea id="mQuestions" name="notes" placeholder="Tell Brian what you'd like to discuss..."></textarea></div></div>
+<input type="hidden" name="leadType" value="Mortgage Inquiry"><input type="hidden" name="calculatorDetails" id="calcDetails">
+<button class="btn btn-gold" type="submit" style="width:100%">Send My Mortgage Inquiry →</button><div class="formstatus" id="mortgageStatus" role="status"></div></form>
+</div></div>
+<iframe name="submitFrame" id="submitFrame" style="display:none"></iframe>
+<script>
+/* Paste your deployed Google Apps Script Web App URL below. */
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwR3c2mWGQ4xg1M6DerJug1EjbBGwx5pbfMdzs7IbVNnvpkeT2QxMBEIc9dIdytEA5vyQ/exec";
+const $ = id => document.getElementById(id);
+const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(Number.isFinite(n)?n:0);
+function calculate(){
+ const price=Math.max(0,Number($('homePrice').value)||0), pct=Math.min(100,Math.max(0,Number($('downPct').value)||0));
+ const down=price*pct/100, principal=Math.max(0,price-down), annualRate=Math.max(0,Number($('rate').value)||0)/100, months=(Number($('term').value)||30)*12;
+ const r=annualRate/12, pi=r===0?principal/months:principal*r/(1-Math.pow(1+r,-months));
+ const tax=Number($('tax').value)||0, ins=Number($('insurance').value)||0, hoa=Number($('hoa').value)||0, pmi=Number($('pmi').value)||0;
+ const tm=tax/12, im=ins/12, other=hoa+pmi, total=pi+tm+im+other;
+ $('taxOut').textContent=money(tax);$('insuranceOut').textContent=money(ins);$('hoaOut').textContent=money(hoa);$('pmiOut').textContent=money(pmi);
+ $('monthlyTotal').textContent=money(total);$('pi').textContent=money(pi);$('taxMonthly').textContent=money(tm);$('insMonthly').textContent=money(im);$('otherMonthly').textContent=money(other);$('downAmount').textContent=money(down);$('loanAmount').textContent=money(principal);
+ const vals=[pi,tm,im,other],sum=vals.reduce((a,b)=>a+b,0)||1;['barPI','barTax','barIns','barOther'].forEach((id,i)=>$(id).style.width=(vals[i]/sum*100)+'%');
+ return {homePrice:price,downPaymentPercent:pct,downPayment:down,interestRate:annualRate*100,loanTermYears:months/12,loanAmount:principal,principalAndInterest:pi,propertyTaxMonthly:tm,insuranceMonthly:im,hoaMonthly:hoa,pmiMonthly:pmi,estimatedMonthlyTotal:total};
+}
+['homePrice','downPct','rate','term','tax','insurance','hoa','pmi'].forEach(id=>$(id).addEventListener('input',calculate));
+$('askMortgage').addEventListener('click',()=>{$('calcDetails').value=JSON.stringify(calculate());$('mortgageModal').classList.add('show')});
+$('closeModal').addEventListener('click',()=>$('mortgageModal').classList.remove('show'));
+$('mortgageModal').addEventListener('click',e=>{if(e.target===$('mortgageModal'))$('mortgageModal').classList.remove('show')});
+document.querySelectorAll('.faqq').forEach(b=>b.addEventListener('click',()=>b.parentElement.classList.toggle('open')));
+$('menuBtn').addEventListener('click',()=>$('navlinks').classList.toggle('show'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>$('navlinks').classList.remove('show')));
+$('year').textContent=new Date().getFullYear();
+function submitLead(form,statusId){
+ const status=$(statusId);
+ if(APPS_SCRIPT_URL.startsWith('PASTE_')){status.textContent='Setup required: add your deployed Apps Script Web App URL in this website file before accepting submissions.';status.style.color='#a05b25';return;}
+ const data=new FormData(form);
+ data.append('pageUrl',location.href);
+ data.append('submittedAt',new Date().toISOString());
+ const temp=document.createElement('form');temp.method='POST';temp.action=APPS_SCRIPT_URL;temp.target='submitFrame';temp.style.display='none';
+ for(const [k,v] of data.entries()){const input=document.createElement('input');input.type='hidden';input.name=k;input.value=v;temp.appendChild(input);}
+ document.body.appendChild(temp);temp.submit();temp.remove();
+ status.textContent='Thank you! Your inquiry has been submitted. Brian or his team can follow up with you.';status.style.color='#52734d';form.reset();
+}
+$('valuationForm').addEventListener('submit',e=>{e.preventDefault();submitLead(e.currentTarget,'valuationStatus')});
+$('mortgageForm').addEventListener('submit',e=>{e.preventDefault();submitLead(e.currentTarget,'mortgageStatus')});
+calculate();
+</script>
+</body></html>
